@@ -5,7 +5,6 @@ async function basicFetch() {
     const products = response.products;
 
 
-    // نضيف كل المنتجات ككروت
     products.forEach(product => {
       output.innerHTML += `
         <div class="card">

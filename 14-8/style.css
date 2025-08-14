@@ -1,0 +1,101 @@
+body {
+  margin: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8; /* خلفية الصفحة هادئة */
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 15px;
+  background-color: #4caf50;  /* أخضر متوسط هادئ */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #45a049; /* أخضر أغمق عند المرور */
+}
+
+.section1 {
+  border: 2px solid #ccc; /* لون محايد */
+  padding: 20px;
+  margin: 0;
+  background-color: #ffffff; /* خلفية بيضاء */
+  border-radius: 10px;
+}
+
+.output {
+  background-color: #e0f7fa; /* لون أزرق فاتح هادئ */
+  padding: 20px;
+  margin: 10px 0;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+/* تصميم الكارت */
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  width: 230px;
+  padding: 15px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  margin: 10px 0 5px;
+  font-size: 1.1em;
+  color: #333; /* لون نص داكن */
+}
+
+.card .price {
+  font-weight: bold;
+  color: #4caf50; /* نفس لون الزر */
+  margin-bottom: 5px;
+}
+
+.card p {
+  margin: 5px 0;
+  font-size: 0.9em;
+  line-height: 1.2em;
+  max-height: none;
+  overflow: visible;
+  color: #555; /* لون نص هادئ */
+}
+
+/* تأثير عند الضغط على الكارت */
+.card:active {
+  background-color: #c8f0d2; /* أخضر فاتح عند الضغط */
+  box-shadow: 0 0 15px 5px rgba(76, 175, 80, 0.5);
+  transform: translateY(2px);
+}
+
+/* تأثير عند المرور بالماوس على الكارت */
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+}
